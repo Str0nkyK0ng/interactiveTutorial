@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Tutorial Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <canvas id="backgroundCanvas"></canvas>
+    <script defer src="home.js"></script>
+    <script defer src="showRawFiles.js"></script>
+    <script defer src="editableCode.js"></script>
+
+    <header>
+      <h1>
+        the interactive website designed to help you make interactive websites
+      </h1>
+    </header>
+    <nav>
+      <li><a href="?noCSS=false">See Styling</a></li>
+      <li><a href="?noCSS=true">Hide Styling</a></li>
+      <li><a href="?raw=index.html">Raw HTML</a></li>
+      <li><a href="?raw=index.css">Raw CSS</a></li>
+      <li><a href="?raw=home.js">Raw JavaScript</a></li>
+    </nav>
+    <main id="mainContent">
+      <section id="Overview">
+        <h2>Overview</h2>
+        <p>
+          This page is an exploration of how to code in HTML/JS in a creative
+          way.
+        </p>
+        <div id="codingGif">
+          <img
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGdqdmdkeDAxbWJzeXBrdW40M3dnMnpmbDdhd3lrNHk2dHBsbTQxYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif"
+            alt="codingGif"
+          />
+          <p>you coding your own website after this guide</p>
+        </div>
+
+        <p>
+          It isn't meant to be an all-encompassing guide, but instead a resource
+          to copy/remix/change parts of. It's centered around the fact that you
+          can look at the HTML/CSS/JS to see how this all works whenever you
+          want.
+        </p>
+        <p>It's a jumping off point.</p>
+      </section>
+      <section id="references">
+        <h2>References</h2>
+        <p>
+          this site is intended to fit into a larger conversation about the
+          "handmade web".
+        </p>
+        <p>here are some people to check out if you're interested:</p>
+        <h4>Artists / Collectives:</h4>
+        <ul>
+          <li><a href="https://eieio.games">Nolen Royalty</a></li>
+          <li><a href="https://neal.fun">Neal Ardwal</a></li>
+          <li><a href="https://chia.design">Chia Amisola</a></li>
+          <li><a href="https://wwwwwwwww.jodi.org">JODI</a></li>
+          <li><a href="https://ambient.garden/">Pierre Cusa</a></li>
+          <li>
+            <a href="https://www.daniellebrathwaiteshirley.com/"
+              >Danielle Brathwaite-Shirley</a
+            >
+          </li>
+          <li>
+            <a href="https://portfolio.mroth.info/">Matthew Rothenberg</a>
+          </li>
+        </ul>
+        <h4>Writing / Theorists:</h4>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.figma.com/blog/making-space-for-a-handmade-web/"
+              >"Making Space for a handmade web" - Chia Amisola (2025)</a
+            >
+          </li>
+          <li>
+            <a href="https://chias.blog/2022/there-is-an-internet-that-is-mine/"
+              >"There is an internet that is mine & I would like you to live in
+              it with me" - Chia Amisola (2022)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://robinrendle.com/notes/i-am-a-poem-i-am-not-software"
+              >“I am a poem I am not software” - Robin Rendle (2023)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"
+              >“My website is a shifting house next to a river of knowledge.
+              What could yours be?” - Laurel Schwulst (2018)</a
+            >
+          </li>
+          <li>
+            <a href="https://luckysoap.com/statements/handmadeweb.html"
+              >“A Handmade Web” - J. R. Carpenter (2016)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://mirror.xyz/austinwadesmith.eth/wrBCeIWNsXbseQiLBj5jR_bkMFZ03nNYs4rg0lU8X2s"
+              >“Queer Servers and Feral Webs” - Austin Wade Smith (2023)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://press.uchicago.edu/ucp/books/book/chicago/P/bo44520895.html"
+              >The Participant - A Century of Participation in Four Stories -
+              Christopher M. Kelty</a
+            >
+          </li>
+          <li>
+            <a href="https://www.dukeupress.edu/migrant-futures"
+              >Migrant Futures: Decolonizing Speculation in Financial Times -
+              Aimiee Bahng</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="editableCode">
+        <h2>a tiny html playground</h2>
+        <div id="twoColEditableCode">
+          <textarea id="inputCode"></textarea>
+          <div id="editableCodeOutput"></div>
+        </div>
+      </section>
+      <section id="codingCanvas">
+        <h2>A little drawing space for you</h2>
+        <canvas id="interactiveCanvas" width="500" height="500"> </canvas>
+      </section>
+
+      <section id="programmingResources">
+        <h2>Programming Resources:</h2>
+        <h3>HTML</h3>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+          </li>
+          <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        </ul>
+        <h3>CSS</h3>
+        <ul>
+          <li><a href="https://web.dev/learn/css">Learn CSS</a></li>
+          <li>
+            <a href="https://www.csszengarden.com/215/">CSS Zen Garden</a>
+          </li>
+          <li>
+            <a href="https://tailwindcss.com/"
+              >Tailwind CSS (my personal fav way to do CSS)</a
+            >
+          </li>
+        </ul>
+        <h3>JavaScript</h3>
+        <ul>
+          <li><a href="https://codecademy.org">CodeCademy</a></li>
+          <li><a href="https://p5js.org">P5 JS</a></li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              >MDN Web Docs</a
+            >
+          </li>
+        </ul>
+        <h3>Website Hosting</h3>
+        <ul>
+          <li><a href="https://pages.github.com/">Github Pages</a></li>
+          <li>
+            <a href="https://neocities.org/">Neocities</a>
+          </li>
+          <li>
+            <a href="http://vercel.com/">Vercel</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

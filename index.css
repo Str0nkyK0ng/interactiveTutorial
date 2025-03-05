@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(4, 71, 134);
+
+  font-family: 'Courier New', Courier, monospace;
+  margin: 50px;
+}
+
+/* This defines what aspects this "block" refers to
+in this case the styling is applied to the nav,header,main and footer elements */
+header,
+footer {
+  background-color: aliceblue;
+  padding: 10px;
+  border-color: black;
+  border: 3px solid;
+  margin-bottom: 10px;
+  max-width: max-content;
+}
+
+nav {
+  background-color: aliceblue;
+  padding: 10px;
+  border-color: black;
+  border: 3px solid;
+  white-space: nowrap;
+  max-width: min-content;
+  max-height: min-content;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+section,
+pre {
+  background-color: aliceblue;
+  padding: 10px;
+  border-color: black;
+  border: 3px solid;
+  margin-bottom: 10px;
+  max-height: fit-content;
+}
+
+#mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+#codingGif {
+  /* we can let the CSS deside the left and right margins so this ends up centered */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* we also want the font in this group to be center aligned and in italics */
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* here we are specifying only the <h2> elements within our "programmingResources" class */
+#programmingResources summary {
+  font-size: large;
+}
+
+#backgroundCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+textarea {
+  width: 100%;
+}
+
+#editableCode {
+  /* take two columns */
+  grid-column: span 2;
+  /* make it take up the full width */
+  width: 100%;
+  /* make it take up the full height */
+  height: 100%;
+}
+
+#editableCode div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+}
