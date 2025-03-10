@@ -71,6 +71,15 @@ pre {
   z-index: -1;
 }
 
+#interactiveCanvas {
+  /* center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* give it a border */
+  border: 3px solid;
+}
+
 textarea {
   width: 100%;
 }

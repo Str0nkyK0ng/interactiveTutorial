@@ -8,9 +8,11 @@
   </head>
   <body>
     <canvas id="backgroundCanvas"></canvas>
-    <script defer src="home.js"></script>
+    <script defer src="drawingSpace.js"></script>
     <script defer src="showRawFiles.js"></script>
+    <script defer src="rain.js"></script>
     <script defer src="editableCode.js"></script>
+    <script defer src="animatedTitle.js"></script>
 
     <header>
       <h1>
@@ -22,7 +24,14 @@
       <li><a href="?noCSS=true">Hide Styling</a></li>
       <li><a href="?raw=index.html">Raw HTML</a></li>
       <li><a href="?raw=index.css">Raw CSS</a></li>
-      <li><a href="?raw=home.js">Raw JavaScript</a></li>
+      <details>
+        <summary>Scripts</summary>
+        <li><a href="?raw=rain.js">Rain Script</a></li>
+        <li><a href="?raw=drawingSpace.js">Drawing Space Script</a></li>
+        <li><a href="?raw=showRawFiles.js">File Display Script</a></li>
+        <li><a href="?raw=editableCode.js">Editable Code Script</a></li>
+        <li><a href="?raw=animatedTitle.js">Animated Title Script</a></li>
+      </details>
     </nav>
     <main id="mainContent">
       <section id="Overview">
@@ -45,7 +54,10 @@
           can look at the HTML/CSS/JS to see how this all works whenever you
           want.
         </p>
-        <p>It's a jumping off point.</p>
+        <p>
+          It's a jumping off point. Please copy, remix, and alter this code to
+          try out new projects or ideas.
+        </p>
       </section>
       <section id="references">
         <h2>References</h2>
@@ -56,6 +68,7 @@
         <p>here are some people to check out if you're interested:</p>
         <h4>Artists / Collectives:</h4>
         <ul>
+          <li><a href="http://www.cassiemcquater.com">Cassie McQuater </a></li>
           <li><a href="https://eieio.games">Nolen Royalty</a></li>
           <li><a href="https://neal.fun">Neal Ardwal</a></li>
           <li><a href="https://chia.design">Chia Amisola</a></li>
@@ -68,6 +81,9 @@
           </li>
           <li>
             <a href="https://portfolio.mroth.info/">Matthew Rothenberg</a>
+          </li>
+          <li>
+            <a href="https://thehtml.review/archive">The HTML Review</a>
           </li>
         </ul>
         <h4>Writing / Theorists:</h4>
@@ -122,6 +138,14 @@
               Aimiee Bahng</a
             >
           </li>
+          <li>
+            <a
+              href="https://us.macmillan.com/books/9780374538668/blockchainchickenfarm/"
+            >
+              Blockchain Chicken Farm: And Other Stories of Tech in China -
+              Xiaowei Wang
+            </a>
+          </li>
         </ul>
       </section>
       <section id="editableCode">
@@ -138,17 +162,38 @@
 
       <section id="programmingResources">
         <h2>Programming Resources:</h2>
+        <h3>General Setup / Tools</h3>
+        <ul>
+          <li><a href="https://jsfiddle.net">JavaScript (JS) Fiddle</a></li>
+          <li>
+            <a href="https://code.visualstudio.com/"
+              >Microsoft Visual Studio Code</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+              >Microsoft Visual Studio CodeLive Server</a
+            >
+          </li>
+        </ul>
         <h3>HTML</h3>
         <ul>
           <li>
-            <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+            <a href="https://developer.mozilla.org/en-US/"
+              >Mozilla Developer Web Docs</a
+            >
           </li>
           <li><a href="https://www.w3schools.com/">W3Schools</a></li>
           <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
         </ul>
         <h3>CSS</h3>
         <ul>
-          <li><a href="https://web.dev/learn/css">Learn CSS</a></li>
+          <li>
+            <a href="https://web.dev/learn/css"
+              >Learn Cascading Style Sheets (CSS)</a
+            >
+          </li>
           <li>
             <a href="https://www.csszengarden.com/215/">CSS Zen Garden</a>
           </li>
@@ -160,17 +205,13 @@
         </ul>
         <h3>JavaScript</h3>
         <ul>
-          <li><a href="https://codecademy.org">CodeCademy</a></li>
-          <li><a href="https://p5js.org">P5 JS</a></li>
-          <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              >MDN Web Docs</a
-            >
-          </li>
+          <li><a href="https://www.codecademy.com/">CodeCademy</a></li>
+          <li><a href="https://p5js.org">P5 JavaScript</a></li>
         </ul>
-        <h3>Website Hosting</h3>
+        <h3>Website Hosting (free)</h3>
         <ul>
           <li><a href="https://pages.github.com/">Github Pages</a></li>
+          <li><a href="https://glitch.me">Glitch</a></li>
           <li>
             <a href="https://neocities.org/">Neocities</a>
           </li>

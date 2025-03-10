@@ -1,4 +1,5 @@
 // This code is used to display "non-HTML" files, or remove stylings.
+// This is maybe a bit more advanced code compared to the rain/drawing space, but I've decided to include it anyways.
 
 function isNoCSSEnabled() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -33,5 +34,15 @@ function rawFile() {
         document.head.appendChild(css);
       });
   }
+
+  //apply all of the parts needed for our rain script
+  let script = document.createElement('script');
+  script.src = 'rain.js';
+  // defer the script so it runs after the html is loaded
+  script.defer = true;
+  document.head.appendChild(script);
+  let canvas = document.createElement('canvas');
+  canvas.id = 'backgroundCanvas';
+  document.body.appendChild(canvas);
 }
 rawFile();
