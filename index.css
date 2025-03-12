@@ -46,6 +46,8 @@ pre {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   grid-gap: 10px;
+  /* buttom padding */
+  margin-bottom: 100px;
 }
 
 #codingGif {

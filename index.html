@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Tutorial Website</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <canvas id="backgroundCanvas"></canvas>
     <script defer src="drawingSpace.js"></script>
     <script defer src="showRawFiles.js"></script>
     <script defer src="rain.js"></script>
     <script defer src="editableCode.js"></script>
     <script defer src="animatedTitle.js"></script>
+    <script defer src="formSubmit.js"></script>
+  </head>
+  <body>
+    <canvas id="backgroundCanvas"></canvas>
 
     <header>
       <h1>
@@ -26,11 +27,12 @@
       <li><a href="?raw=index.css">Raw CSS</a></li>
       <details>
         <summary>Scripts</summary>
-        <li><a href="?raw=rain.js">Rain Script</a></li>
+        <!-- <li><a href="?raw=rain.js">Rain Script</a></li> -->
         <li><a href="?raw=drawingSpace.js">Drawing Space Script</a></li>
         <li><a href="?raw=showRawFiles.js">File Display Script</a></li>
         <li><a href="?raw=editableCode.js">Editable Code Script</a></li>
         <li><a href="?raw=animatedTitle.js">Animated Title Script</a></li>
+        <li><a href="?raw=formSubmit.js">Form Submit Script</a></li>
       </details>
     </nav>
     <main id="mainContent">
@@ -225,6 +227,17 @@
             <a href="http://vercel.com/">Vercel</a>
           </li>
         </ul>
+      </section>
+      <section>
+        <h2>Comments/Questions/Concerns/Feedback?</h2>
+        <form
+          id="feedback-form"
+          method="post"
+          action="https://sheetdb.io/api/v1/az830ne8ejtbw"
+        >
+          <textarea name="data[feedback]" rows="4" cols="50"></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
   </body>

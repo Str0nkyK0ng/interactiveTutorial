@@ -33,16 +33,16 @@ function rawFile() {
         css.href = 'style.css';
         document.head.appendChild(css);
       });
-  }
 
-  //apply all of the parts needed for our rain script
-  let script = document.createElement('script');
-  script.src = 'rain.js';
-  // defer the script so it runs after the html is loaded
-  script.defer = true;
-  document.head.appendChild(script);
-  let canvas = document.createElement('canvas');
-  canvas.id = 'backgroundCanvas';
-  document.body.appendChild(canvas);
+    //apply all of the parts needed for our rain script
+    let script = document.createElement('script');
+    script.src = 'rain.js';
+    // defer the script so it runs after the html is loaded
+    script.defer = true;
+    document.head.appendChild(script);
+    let canvas = document.createElement('canvas');
+    canvas.id = 'backgroundCanvas';
+    document.body.appendChild(canvas);
+  }
 }
 rawFile();
